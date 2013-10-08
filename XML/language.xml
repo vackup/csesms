@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Language>
+  <Comment type="CHANCE" followup="false">Min. %s :(%s) %s with the dribble</Comment>
+<Comment type="CHANCE" followup="false">Min. %s :(%s) %s takes possesion</Comment>
+<Comment type="CHANCE" followup="false">Min. %s :(%s) %s cuts through the defense</Comment>
+<Comment type="CHANCE" followup="false">Min. %s :(%s) %s finds a hole in the defense</Comment>
+<Comment type="CHANCE" followup="false">Min. %s :(%s) %s takes advantage of a defensive mistake</Comment>
+<Comment type="CHANCE" followup="false">Min. %s :(%s) %s finds his way through</Comment>
+<Comment type="CHANCE" followup="false">Min. %s :(%s) %s sidesteps his marker</Comment>
+<Comment type="CHANCE" followup="false">Min. %s :(%s) %s with a flashy move</Comment>
+<Comment type="CHANCE" followup="false">Min. %s :(%s) %s beats his marker</Comment>
+<Comment type="CHANCE" followup="false">Min. %s :(%s) %s with a real burst of pace</Comment>
+<Comment type="CHANCE" followup="false">Min. %s :(%s) %s bursts forward</Comment>
+<Comment type="CHANCE" followup="false">Min. %s :(%s) %s finds himself in a good position</Comment>
+<Comment type="ASSISTEDCHANCE" followup="false">Min. %s :(%s) %s passes the ball to %s</Comment>
+<Comment type="ASSISTEDCHANCE" followup="false">Min. %s :(%s) %s with a smart pass to %s</Comment>
+<Comment type="ASSISTEDCHANCE" followup="false">Min. %s :(%s) %s finds %s in the box</Comment>
+<Comment type="ASSISTEDCHANCE" followup="false">Min. %s :(%s) %s with a precise pass to %s</Comment>
+<Comment type="ASSISTEDCHANCE" followup="false">Min. %s :(%s) %s heads the ball down to %s</Comment>
+<Comment type="ASSISTEDCHANCE" followup="false">Min. %s :(%s) %s slides the ball across to %s</Comment>
+<Comment type="ASSISTEDCHANCE" followup="false">Min. %s :(%s) %s cuts the ball back to %s</Comment>
+<Comment type="ASSISTEDCHANCE" followup="false">Min. %s :(%s) %s with the heel pass to %s</Comment>
+<Comment type="ASSISTEDCHANCE" followup="false">Min. %s :(%s) %s plays a long ball to %s</Comment>
+<Comment type="ASSISTEDCHANCE" followup="false">Min. %s :(%s) %s with a glorious long pass to %s</Comment>
+<Comment type="TACKLE" followup="true">  Cleared by %s</Comment>
+<Comment type="TACKLE" followup="true">  Blocked by %s</Comment>
+<Comment type="TACKLE" followup="true">  %s wins the ball with a clear tackle</Comment>
+<Comment type="TACKLE" followup="true">  Intercepted by %s</Comment>
+<Comment type="TACKLE" followup="true">  %s gets in the way and wins the ball</Comment>
+<Comment type="TACKLE" followup="true">  But %s clears the danger</Comment>
+<Comment type="TACKLE" followup="true">  But %s clears the ball to safety</Comment>
+<Comment type="TACKLE" followup="true">  But %s wins the ball with a sliding challenge</Comment>
+<Comment type="TACKLE" followup="true">  But %s wins the tackle</Comment>
+<Comment type="TACKLE" followup="true">  But %s reads the situation well and wins the ball</Comment>
+<Comment type="SHOT" followup="true">  A powerful shot by %s !</Comment>
+<Comment type="SHOT" followup="true">  %s tries to beat the keeper !</Comment>
+<Comment type="SHOT" followup="true">  %s with the strike !</Comment>
+<Comment type="SHOT" followup="true">  %s shoots towards goal !</Comment>
+<Comment type="SHOT" followup="true">  %s tries to chip the ball over the keeper !</Comment>
+<Comment type="SHOT" followup="true">  %s with the shot !</Comment>
+<Comment type="SHOT" followup="true">  %s chases it through, he must score !</Comment>
+<Comment type="SHOT" followup="true">  %s is one of one with the keeper, he shoots !</Comment>
+<Comment type="SHOT" followup="true">  %s goes for goal !</Comment>
+<Comment type="SHOT" followup="true">  A vicious shot by %s !</Comment>
+<Comment type="SAVE" followup="true">  Saved by %s</Comment>
+<Comment type="SAVE" followup="true">  %s gathers it comfortably</Comment>
+<Comment type="SAVE" followup="true">  %s makes a comfortable save</Comment>
+<Comment type="SAVE" followup="true">  But %s makes a fine save</Comment>
+<Comment type="SAVE" followup="true">  %s makes a good save</Comment>
+<Comment type="SAVE" followup="true">  %s parries it</Comment>
+<Comment type="SAVE" followup="true">  %s makes a difficult save</Comment>
+<Comment type="SAVE" followup="true">  But %s with the difficult save</Comment>
+<Comment type="SAVE" followup="true">  But %s reaches the ball. Good save</Comment>
+<Comment type="SAVE" followup="true">  But %s punches it away</Comment>
+<Comment type="OFFTARGET" followup="true">  But it goes wide</Comment>
+<Comment type="OFFTARGET" followup="true">  But it goes wide of the post</Comment>
+<Comment type="OFFTARGET" followup="true">  Over the bar</Comment>
+<Comment type="OFFTARGET" followup="true">  It goes wide for a goal kick</Comment>
+<Comment type="OFFTARGET" followup="true">  But it clips the post and goes wide</Comment>
+<Comment type="OFFTARGET" followup="true">  But it whistles just past the post</Comment>
+<Comment type="OFFTARGET" followup="true">  But it goes just over</Comment>
+<Comment type="OFFTARGET" followup="true">  But he puts it wide</Comment>
+<Comment type="OFFTARGET" followup="true">  But he puts it into the crowd</Comment>
+<Comment type="OFFTARGET" followup="true">  Wide of goal</Comment>
+<Comment type="GOAL" followup="true">  GOAL !!</Comment>
+<Comment type="GOALCANCELLED" followup="true">  But it's been disallowed. The linesman raised his flag</Comment>
+<Comment type="GOALCANCELLED" followup="true">  But it's been disallowed. The referee spotted something</Comment>
+<Comment type="GOALCANCELLED" followup="true">  But it's been disallowed. The linesman flags for offside</Comment>
+<Comment type="INJURY" followup="false">Min. %s :(%s) %s injured. He's unable to continue</Comment>
+<Comment type="INJURY" followup="false">Min. %s :(%s) %s injured. He's been stretchered off</Comment>
+<Comment type="INJURY" followup="false">Min. %s :(%s) %s falls badly. He's unable to continue</Comment>
+<Comment type="CHANGEPOSITION" followup="false">Min. %s :(%s) %s will now play as %s</Comment>
+<Comment type="SUB" followup="false">Min. %s :(%s) %s will come on for %s and play %s</Comment>
+<Comment type="NOSUBSLEFT" followup="true">  They have no substitutions left. Will play a man down</Comment>
+<Comment type="CHANGETACTIC" followup="false">Min. %s :(%s) %s will now play %s</Comment>
+<Comment type="FOUL" followup="false">Min. %s :(%s) %s with the foul</Comment>
+<Comment type="FOUL" followup="false">Min. %s :(%s) %s with a nasty foul</Comment>
+<Comment type="FOUL" followup="false">Min. %s :(%s) %s fouls badly</Comment>
+<Comment type="FOUL" followup="false">Min. %s :(%s) %s with a bad challenge</Comment>
+<Comment type="FOUL" followup="false">Min. %s :(%s) %s with an ugly foul</Comment>
+<Comment type="PENALTY" followup="true">  PENALTY !! \n          ...  %s will take it</Comment>
+<Comment type="PENALTY" followup="true">  PENALTY !! \n          ...  %s takes it</Comment>
+<Comment type="PENALTY" followup="true">  PENALTY !! \n          ...  %s with the spot kick</Comment>
+<Comment type="WARNED" followup="true">  He is warned by the ref</Comment>
+<Comment type="WARNED" followup="true">  The referee calls him for a talk</Comment>
+<Comment type="WARNED" followup="true">  The ref warns him</Comment>
+<Comment type="YELLOWCARD" followup="true">  He gets a yellow card</Comment>
+<Comment type="YELLOWCARD" followup="true">  Shown a yellow card</Comment>
+<Comment type="YELLOWCARD" followup="true">  He is booked for that one</Comment>
+<Comment type="SECONDYELLOWCARD" followup="true">  It's his second ! Sent off !</Comment>
+<Comment type="SECONDYELLOWCARD" followup="true">  His 2nd yellow this game ! Sent off !</Comment>
+<Comment type="SECONDYELLOWCARD" followup="true">  His 2nd yellow this game ! Sent off !</Comment>
+<Comment type="REDCARD" followup="true">  The ref sends him off the pitch !!</Comment>
+<Comment type="REDCARD" followup="true">  It's a red card !! End of the game for him</Comment>
+<Comment type="REDCARD" followup="true">  Shown a red card !!</Comment>
+<Comment type="STARTINGFORMATION" followup="false">%s starts the game playing %s</Comment>
+<Comment type="COMM_HALFTIME" followup="false">*************  HALF TIME  ****************</Comment>
+<Comment type="COMM_FULLTIME" followup="false">*************  FULL TIME  ****************</Comment>
+<Comment type="COMM_SHOTSOFFTARGET" followup="false">Shots off target</Comment>
+<Comment type="COMM_SHOTSONTARGET" followup="false">Shots on target</Comment>
+<Comment type="PENALTYSHOOTOUT" followup="false">**********  PENALTY SHOOTOUT  **********</Comment>
+<Comment type="WONPENALTYSHOOTOUT" followup="false">\n          ...  %s wins the penalty shootout</Comment>
+<Comment type="COMM_SCORE" followup="false">Score</Comment>
+<Comment type="COMM_INJURYTIME" followup="false">The ref adds %s min. of injury time</Comment>
+</Language>

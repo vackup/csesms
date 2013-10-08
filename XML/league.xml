@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Config>
+	<HomeBonus>200</HomeBonus>
+	<DpForYellow>3</DpForYellow>
+	<DpForRed>9</DpForRed>
+	<SuspensionMargin>9</SuspensionMargin>
+	<CupMatch>0</CupMatch>
+	<MaxInjuryLength>5</MaxInjuryLength>
+	<NumSubs>5</NumSubs>
+	<Substitutions>3</Substitutions>
+	<Promotions>1</Promotions>
+	<Relegations>2</Relegations>
+
+	<AbGoal>50</AbGoal>
+	<AbAssist>35</AbAssist>
+	<AbVictoryRandom>60</AbVictoryRandom>
+	<AbDefeatRandom>-60</AbDefeatRandom>
+	<AbCleanSheet>50</AbCleanSheet>
+	<AbKeyTackling>18</AbKeyTackling>
+	<AbKeyPasses>12</AbKeyPasses>
+	<AbShotsOn>2</AbShotsOn>
+	<AbShotsOff>0</AbShotsOff>
+	<AbSaves>12</AbSaves>
+	<AbConceded>-8</AbConceded>
+	<AbYellow>-8</AbYellow>
+	<AbRed>-20</AbRed>
+
+	<Team abbr="dot">Don Orione's Tigers</Team>
+	<Team abbr="fcs">FC Superdotati</Team>
+	<Team abbr="pfc">I Prostici FC</Team>
+	<Team abbr="otb">Only the Brave</Team>
+	<Team abbr="ifc">MuTeam</Team>
+	<Team abbr="lac">Lazzaro AC</Team>
+	<Team abbr="reg">Reggio Fun Team</Team>
+	<Team abbr="mab">Maverik All Black</Team>
+	<Team abbr="stp">Steel Panthers</Team>
+	<Team abbr="atm">Atletico Matot FC</Team>
+
+</Config>

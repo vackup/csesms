@@ -1,0 +1,2573 @@
+﻿<ConversionLog>
+    <Settings>
+        <Setting
+            Name = "LogFile"
+            Value = "CSEsMS.xml"
+        />
+        <Setting
+            Name = "ProjectName"
+            Value = "CSEsMS"
+        />
+        <Setting
+            Name = "StartTime"
+            Value = "Tuesday, March 16, 2010 02:12:08"
+        />
+        <Setting
+            Name = "OutputDir"
+            Value = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS"
+        />
+        <Setting
+            Name = "ProjectPath"
+            Value = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src"
+        />
+    </Settings>
+    <Root>
+        <Directory Name = "Engine" >
+            <Directory Name = "Actions" >
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\Actions\Action.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Action.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\Actions\ChangePosAction.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\ChangePosAction.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\Actions\SubAction.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\SubAction.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\Actions\TacticAction.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\TacticAction.cs"
+                />
+            </Directory>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\Bonus.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Bonus.cs"
+            />
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\Conditional.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Conditional.cs"
+            >
+                <Class Name = "Engine.Conditional" >
+                    <Section Name = "toString()" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.lang.Object.toString' may return a different value.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.lang.Object.toString' may return a different value.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <Directory Name = "Conditions" >
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\Conditions\Condition.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Condition.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\Conditions\InjCondition.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\InjCondition.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\Conditions\MinCondition.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\MinCondition.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\Conditions\RedCondition.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\RedCondition.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\Conditions\ScoreCondition.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\ScoreCondition.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\Conditions\YellowCondition.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\YellowCondition.cs"
+                />
+            </Directory>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\Config.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Config.cs"
+            >
+                <Class Name = "Engine.Config" >
+                    <Section Name = "getTeams()" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilEnumerationhasMoreElements"
+                            Severity = "2"
+                        >Method 'java.util.Enumeration.hasMoreElements' was converted to 'System.Collections.IEnumerator.MoveNext' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilEnumerationnextElement"
+                            Severity = "2"
+                        >Method 'java.util.Enumeration.nextElement' was converted to 'System.Collections.IEnumerator.Current' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "getAbbreviationFromName(java.lang.String)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilEnumerationhasMoreElements"
+                            Severity = "2"
+                        >Method 'java.util.Enumeration.hasMoreElements' was converted to 'System.Collections.IEnumerator.MoveNext' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilEnumerationnextElement"
+                            Severity = "2"
+                        >Method 'java.util.Enumeration.nextElement' was converted to 'System.Collections.IEnumerator.Current' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "Config(java.io.InputStream)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.SAXParser.getXMLReader' was converted to 'SupportClass.XmlSAXDocumentManager' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Reader' and 'System.IO.StreamReader' may cause compilation errors.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioInputStreamReaderInputStreamReader_javaioInputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.InputStreamReader.InputStreamReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersParserConfigurationException"
+                            Severity = "1"
+                        >Class 'javax.xml.parsers.ParserConfigurationException' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "Config(java.lang.String)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.SAXParser.getXMLReader' was converted to 'SupportClass.XmlSAXDocumentManager' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Reader' and 'System.IO.StreamReader' may cause compilation errors.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Constructor 'java.io.FileReader.FileReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersParserConfigurationException"
+                            Severity = "1"
+                        >Class 'javax.xml.parsers.ParserConfigurationException' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "printTable()" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilEnumerationhasMoreElements"
+                            Severity = "2"
+                        >Method 'java.util.Enumeration.hasMoreElements' was converted to 'System.Collections.IEnumerator.MoveNext' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilEnumerationnextElement"
+                            Severity = "2"
+                        >Method 'java.util.Enumeration.nextElement' was converted to 'System.Collections.IEnumerator.Current' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.lang.Object.toString' may return a different value.</Issue>
+                    </Section>
+                    <Section Name = "Declarations" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'org.xml.sax.ContentHandler.ignorableWhitespace' was converted to 'XmlSaxContentHandler.ignorableWhitespace' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'org.xml.sax.Locator' may return a different value.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\ExitCodes.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\ExitCodes.cs"
+            />
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\Fixtures.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Fixtures.cs"
+            >
+                <Class Name = "Engine.Fixtures" >
+                    <Section Name = "Fixtures(java.lang.String)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.SAXParser.getXMLReader' was converted to 'SupportClass.XmlSAXDocumentManager' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioFileInputStreamFileInputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.FileInputStream.FileInputStream' was converted to 'System.IO.FileStream.FileStream' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Reader' and 'System.IO.StreamReader' may cause compilation errors.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioInputStreamReaderInputStreamReader_javaioInputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.InputStreamReader.InputStreamReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersParserConfigurationException"
+                            Severity = "1"
+                        >Class 'javax.xml.parsers.ParserConfigurationException' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "Fixtures(java.io.InputStream)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.SAXParser.getXMLReader' was converted to 'SupportClass.XmlSAXDocumentManager' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Reader' and 'System.IO.StreamReader' may cause compilation errors.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioInputStreamReaderInputStreamReader_javaioInputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.InputStreamReader.InputStreamReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersParserConfigurationException"
+                            Severity = "1"
+                        >Class 'javax.xml.parsers.ParserConfigurationException' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "writeFixtures(java.lang.String,java.lang.String)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioOutputStreamWriterOutputStreamWriter_javaioOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.OutputStreamWriter.OutputStreamWriter' was converted to 'System.IO.StreamWriter.StreamWriter' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioFileOutputStreamFileOutputStream_javaioFile"
+                            Severity = "2"
+                        >Constructor 'java.io.FileOutputStream.FileOutputStream' was converted to 'System.IO.FileStream.FileStream' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.ArrayList.add' may return a different value.</Issue>
+                    </Section>
+                    <Section Name = "Declarations" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'org.xml.sax.ContentHandler.ignorableWhitespace' was converted to 'XmlSaxContentHandler.ignorableWhitespace' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'org.xml.sax.Locator' may return a different value.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\Match.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Match.cs"
+            />
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\MatchStatus.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\MatchStatus.cs"
+            />
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\Mult.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Mult.cs"
+            />
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\Player.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Player.cs"
+            >
+                <Class Name = "Engine.Player" >
+                    <Section Name = "createNode()" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaxxmlparsersDocumentBuilder"
+                            Severity = "2"
+                        >Class 'javax.xml.parsers.DocumentBuilder' was converted to 'System.Xml.XmlDocument' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.w3c.dom.DOMException' was converted to 'System.Exceptiont' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersParserConfigurationException"
+                            Severity = "1"
+                        >Class 'javax.xml.parsers.ParserConfigurationException' was not converted.</Issue>
+                    </Section>
+                    <Section Name = "WriteRoster(java.io.Writer)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaxxmltransformdomDOMSource"
+                            Severity = "2"
+                        >Class 'javax.xml.transform.dom.DOMSource' was converted to 'DomSourceSupport' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaxxmltransformdomDOMSource"
+                            Severity = "2"
+                        >Class 'javax.xml.transform.dom.DOMSource' was converted to 'DomSourceSupport' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaxxmltransformTransformerFactorynewTransformer"
+                            Severity = "2"
+                        >Method 'javax.xml.transform.TransformerFactory.newTransformer' was converted to 'SupportClass.TransformerSupport.NewTransform' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "Declarations" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Writer' and 'System.IO.StreamWriter' may cause compilation errors.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1262"
+                            Severity = "2"
+                        >The type 'com.sun.org.apache.xpath.internal_Renamed.NodeSet' could not be found. If it was not included in the conversion, there may be compiler issues.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1262"
+                            Severity = "2"
+                        >The package 'javax.xml.xpath' could not be found. If it was not included in the conversion, there may be compiler issues.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\PreferredSide.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\PreferredSide.cs"
+            />
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\Roster.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Roster.cs"
+            >
+                <Class Name = "Engine.Roster" >
+                    <Section Name = "convertFromESMS(java.io.File,java.io.File)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1092"
+                            Severity = "2"
+                        >The differences in the expected value  of parameters for constructor 'java.io.BufferedReader.BufferedReader'  may cause compilation errors. </Issue>
+                        <Issue
+                            Type = "Runtime"
+                            Number = "1181"
+                            Severity = "2"
+                        >At least one expression was used more than once in the target code.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Constructor 'java.io.FileReader.FileReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Constructor 'java.io.FileReader.FileReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioOutputStreamWriterOutputStreamWriter_javaioOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.OutputStreamWriter.OutputStreamWriter' was converted to 'System.IO.StreamWriter.StreamWriter' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioFileOutputStreamFileOutputStream_javaioFile"
+                            Severity = "2"
+                        >Constructor 'java.io.FileOutputStream.FileOutputStream' was converted to 'System.IO.FileStream.FileStream' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "main(java.lang.String[])" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javatextSimpleDateFormat"
+                            Severity = "1"
+                        >Constructor 'java.text.SimpleDateFormat.SimpleDateFormat' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.Calendar.getTime' may return a different value.</Issue>
+                    </Section>
+                    <Section Name = "setBudget(double)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioPrintStreamprintln_javalangObject"
+                            Severity = "2"
+                        >Method 'java.io.PrintStream.println' was converted to 'System.Console.Out.WriteLine' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "Roster()" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1156"
+                            Severity = "1"
+                        >The following fragment of code could not be parsed and was not converted.</Issue>
+                    </Section>
+                    <Section Name = "parseXML(java.io.InputStream)" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersDocumentBuilderFactory"
+                            Severity = "1"
+                        >Method 'javax.xml.parsers.DocumentBuilderFactory.newInstance' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaxxmlparsersDocumentBuilderparse_javaioInputStream"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.DocumentBuilder.parse' was converted to 'System.Xml.XmlDocument.Load' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersParserConfigurationException"
+                            Severity = "1"
+                        >Class 'javax.xml.parsers.ParserConfigurationException' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "Roster(java.io.InputStream)" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1156"
+                            Severity = "1"
+                        >The following fragment of code could not be parsed and was not converted.</Issue>
+                    </Section>
+                    <Section Name = "Roster(java.lang.String)" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersDocumentBuilderFactory"
+                            Severity = "1"
+                        >Method 'javax.xml.parsers.DocumentBuilderFactory.newInstance' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaxxmlparsersDocumentBuilderparse_javaioInputStream"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.DocumentBuilder.parse' was converted to 'System.Xml.XmlDocument.Load' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioFileInputStreamFileInputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.FileInputStream.FileInputStream' was converted to 'System.IO.FileStream.FileStream' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersParserConfigurationException"
+                            Severity = "1"
+                        >Class 'javax.xml.parsers.ParserConfigurationException' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1156"
+                            Severity = "1"
+                        >The following fragment of code could not be parsed and was not converted.</Issue>
+                    </Section>
+                    <Section Name = "WriteRoster(java.lang.String)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaxxmltransformdomDOMSource"
+                            Severity = "2"
+                        >Class 'javax.xml.transform.dom.DOMSource' was converted to 'DomSourceSupport' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaxxmltransformdomDOMSource"
+                            Severity = "2"
+                        >Class 'javax.xml.transform.dom.DOMSource' was converted to 'DomSourceSupport' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaxxmltransformTransformerFactorynewTransformer"
+                            Severity = "2"
+                        >Method 'javax.xml.transform.TransformerFactory.newTransformer' was converted to 'SupportClass.TransformerSupport.NewTransform' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "WriteRoster(java.lang.String,java.lang.String)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaxxmltransformdomDOMSource"
+                            Severity = "2"
+                        >Class 'javax.xml.transform.dom.DOMSource' was converted to 'DomSourceSupport' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaxxmltransformdomDOMSource"
+                            Severity = "2"
+                        >Class 'javax.xml.transform.dom.DOMSource' was converted to 'DomSourceSupport' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaxxmltransformTransformerFactorynewTransformer"
+                            Severity = "2"
+                        >Method 'javax.xml.transform.TransformerFactory.newTransformer' was converted to 'SupportClass.TransformerSupport.NewTransform' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "Declarations" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1156"
+                            Severity = "1"
+                        >The following fragment of code could not be parsed and was not converted.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1156"
+                            Severity = "1"
+                        >The following fragment of code could not be parsed and was not converted.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1156"
+                            Severity = "1"
+                        >The following fragment of code could not be parsed and was not converted.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1156"
+                            Severity = "1"
+                        >The following fragment of code could not be parsed and was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1262"
+                            Severity = "2"
+                        >The type 'com.sun.org.apache.xpath.internal_Renamed.NodeSet' could not be found. If it was not included in the conversion, there may be compiler issues.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1262"
+                            Severity = "2"
+                        >The package 'javax.xml.xpath' could not be found. If it was not included in the conversion, there may be compiler issues.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1262"
+                            Severity = "2"
+                        >The package 'java.util.regex' could not be found. If it was not included in the conversion, there may be compiler issues.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\Tactic.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Tactic.cs"
+            >
+                <Class Name = "Engine.Tactic" >
+                    <Section Name = "printTactics()" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilEnumerationhasMoreElements"
+                            Severity = "2"
+                        >Method 'java.util.Enumeration.hasMoreElements' was converted to 'System.Collections.IEnumerator.MoveNext' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilEnumerationnextElement"
+                            Severity = "2"
+                        >Method 'java.util.Enumeration.nextElement' was converted to 'System.Collections.IEnumerator.Current' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "parseTactics(java.io.InputStream)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.SAXParser.getXMLReader' was converted to 'SupportClass.XmlSAXDocumentManager' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersParserConfigurationException"
+                            Severity = "1"
+                        >Class 'javax.xml.parsers.ParserConfigurationException' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "parseTactics(java.lang.String)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.SAXParser.getXMLReader' was converted to 'SupportClass.XmlSAXDocumentManager' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Reader' and 'System.IO.StreamReader' may cause compilation errors.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Constructor 'java.io.FileReader.FileReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersParserConfigurationException"
+                            Severity = "1"
+                        >Class 'javax.xml.parsers.ParserConfigurationException' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "Declarations" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'org.xml.sax.ContentHandler.ignorableWhitespace' was converted to 'XmlSaxContentHandler.ignorableWhitespace' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'org.xml.sax.Locator' may return a different value.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\TeamSheet.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\TeamSheet.cs"
+            >
+                <Class Name = "Engine.TeamSheet" >
+                    <Section Name = "parseXML(java.io.InputStream)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.SAXParser.getXMLReader' was converted to 'SupportClass.XmlSAXDocumentManager' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Reader' and 'System.IO.StreamReader' may cause compilation errors.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioInputStreamReaderInputStreamReader_javaioInputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.InputStreamReader.InputStreamReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersParserConfigurationException"
+                            Severity = "1"
+                        >Class 'javax.xml.parsers.ParserConfigurationException' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "TeamSheet(java.lang.String)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.SAXParser.getXMLReader' was converted to 'SupportClass.XmlSAXDocumentManager' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Reader' and 'System.IO.StreamReader' may cause compilation errors.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Constructor 'java.io.FileReader.FileReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersParserConfigurationException"
+                            Severity = "1"
+                        >Class 'javax.xml.parsers.ParserConfigurationException' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "main(java.lang.String[])" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javatextSimpleDateFormat"
+                            Severity = "1"
+                        >Constructor 'java.text.SimpleDateFormat.SimpleDateFormat' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.Calendar.getTime' may return a different value.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.lang.Throwable.toString' may return a different value.</Issue>
+                    </Section>
+                    <Section Name = "convertFromESMS(java.io.File,java.io.File)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1092"
+                            Severity = "2"
+                        >The differences in the expected value  of parameters for constructor 'java.io.BufferedReader.BufferedReader'  may cause compilation errors. </Issue>
+                        <Issue
+                            Type = "Runtime"
+                            Number = "1181"
+                            Severity = "2"
+                        >At least one expression was used more than once in the target code.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Constructor 'java.io.FileReader.FileReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Constructor 'java.io.FileReader.FileReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioOutputStreamWriterOutputStreamWriter_javaioOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.OutputStreamWriter.OutputStreamWriter' was converted to 'System.IO.StreamWriter.StreamWriter' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioFileOutputStreamFileOutputStream_javaioFile"
+                            Severity = "2"
+                        >Constructor 'java.io.FileOutputStream.FileOutputStream' was converted to 'System.IO.FileStream.FileStream' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "endElement(java.lang.String,java.lang.String,java.lang.String)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.lang.Throwable.getMessage' may return a different value.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "save(java.lang.String)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioOutputStreamWriterOutputStreamWriter_javaioOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.OutputStreamWriter.OutputStreamWriter' was converted to 'System.IO.StreamWriter.StreamWriter' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioFileOutputStreamFileOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.FileOutputStream.FileOutputStream' was converted to 'System.IO.FileStream.FileStream' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "Declarations" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'org.xml.sax.ContentHandler.ignorableWhitespace' was converted to 'XmlSaxContentHandler.ignorableWhitespace' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'org.xml.sax.Locator' may return a different value.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1262"
+                            Severity = "2"
+                        >The package 'java.util.regex' could not be found. If it was not included in the conversion, there may be compiler issues.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\TeamStatus.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\TeamStatus.cs"
+            />
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\Version.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Version.cs"
+            >
+                <Class Name = "Engine.Version" >
+                    <Section Name = "getFullVersion()" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javatextSimpleDateFormat"
+                            Severity = "1"
+                        >Constructor 'java.text.SimpleDateFormat.SimpleDateFormat' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.Calendar.getTime' may return a different value.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\Week.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Week.cs"
+            >
+                <Class Name = "Engine.Week" >
+                    <Section Name = "addMatch(Engine.Match)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.ArrayList.add' may return a different value.</Issue>
+                    </Section>
+                    <Section Name = "setMatches(Engine.Match[])" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilArraysasList_javalangObject[]"
+                            Severity = "2"
+                        >Method 'java.util.Arrays.asList' was converted to 'System.Collections.ArrayList' which has a different behavior.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Engine\XmlFileMerger.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\XmlFileMerger.cs"
+            >
+                <Class Name = "Engine.XmlFileMerger" >
+                    <Section Name = "XmlFileMerger(java.io.File,java.io.File,java.lang.String[])" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersDocumentBuilderFactory"
+                            Severity = "1"
+                        >Method 'javax.xml.parsers.DocumentBuilderFactory.newInstance' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaxxmlparsersDocumentBuilder"
+                            Severity = "2"
+                        >Class 'javax.xml.parsers.DocumentBuilder' was converted to 'System.Xml.XmlDocument' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaxxmlparsersDocumentBuilderparse_javaioFile"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.DocumentBuilder.parse' was converted to 'System.Xml.XmlDocument.Load' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaxxmlparsersDocumentBuilderparse_javaioFile"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.DocumentBuilder.parse' was converted to 'System.Xml.XmlDocument.Load' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.ArrayList.addAll' may return a different value.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilArraysasList_javalangObject[]"
+                            Severity = "2"
+                        >Method 'java.util.Arrays.asList' was converted to 'System.Collections.ArrayList' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "XmlFileMerger(java.io.File,java.io.File)" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersDocumentBuilderFactory"
+                            Severity = "1"
+                        >Method 'javax.xml.parsers.DocumentBuilderFactory.newInstance' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaxxmlparsersDocumentBuilder"
+                            Severity = "2"
+                        >Class 'javax.xml.parsers.DocumentBuilder' was converted to 'System.Xml.XmlDocument' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaxxmlparsersDocumentBuilderparse_javaioFile"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.DocumentBuilder.parse' was converted to 'System.Xml.XmlDocument.Load' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaxxmlparsersDocumentBuilderparse_javaioFile"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.DocumentBuilder.parse' was converted to 'System.Xml.XmlDocument.Load' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "parseElement(org.w3c.dom.Node,org.w3c.dom.Node)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_orgw3cdomElementsetAttribute_javalangString_javalangString"
+                            Severity = "2"
+                        >Method 'org.w3c.dom.Element.setAttribute' was converted to 'System.Xml.XmlElement.SetAttribute' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'org.w3c.dom.Node.getChildNodes' was converted to 'System.Xml.XmlNode.ChildNodes' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'org.w3c.dom.Node.getChildNodes' was converted to 'System.Xml.XmlNode.ChildNodes' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "save()" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaxxmltransformdomDOMSource"
+                            Severity = "2"
+                        >Class 'javax.xml.transform.dom.DOMSource' was converted to 'DomSourceSupport' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaxxmltransformdomDOMSource"
+                            Severity = "2"
+                        >Class 'javax.xml.transform.dom.DOMSource' was converted to 'DomSourceSupport' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaxxmltransformTransformerFactorynewTransformer"
+                            Severity = "2"
+                        >Method 'javax.xml.transform.TransformerFactory.newTransformer' was converted to 'SupportClass.TransformerSupport.NewTransform' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmltransformTransformersetOutputProperty_javalangString_javalangString"
+                            Severity = "1"
+                        >Method 'javax.xml.transform.Transformer.setOutputProperty' was not converted.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmltransformOutputKeys"
+                            Severity = "1"
+                        >Field 'javax.xml.transform.OutputKeys.ENCODING' was not converted.</Issue>
+                    </Section>
+                </Class>
+            </File>
+        </Directory>
+        <Directory Name = "ESMS" >
+            <Directory Name = "Actions" >
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\Actions\ESMSAction.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\ESMSAction.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\Actions\ESMSChangePosAction.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\ESMSChangePosAction.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\Actions\ESMSSubAction.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\ESMSSubAction.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\Actions\ESMSTacticAction.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\ESMSTacticAction.cs"
+                />
+            </Directory>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\Comment.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Comment.cs"
+            >
+                <Class Name = "ESMS.Comment" >
+                    <Section Name = "main(java.lang.String[])" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.lang.Throwable.toString' may return a different value.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javatextSimpleDateFormat"
+                            Severity = "1"
+                        >Constructor 'java.text.SimpleDateFormat.SimpleDateFormat' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.Calendar.getTime' may return a different value.</Issue>
+                    </Section>
+                    <Section Name = "convertFromESMS(java.io.File,java.io.File)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1092"
+                            Severity = "2"
+                        >The differences in the expected value  of parameters for constructor 'java.io.BufferedReader.BufferedReader'  may cause compilation errors. </Issue>
+                        <Issue
+                            Type = "Runtime"
+                            Number = "1181"
+                            Severity = "2"
+                        >At least one expression was used more than once in the target code.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Constructor 'java.io.FileReader.FileReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Constructor 'java.io.FileReader.FileReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioOutputStreamWriterOutputStreamWriter_javaioOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.OutputStreamWriter.OutputStreamWriter' was converted to 'System.IO.StreamWriter.StreamWriter' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioFileOutputStreamFileOutputStream_javaioFile"
+                            Severity = "2"
+                        >Constructor 'java.io.FileOutputStream.FileOutputStream' was converted to 'System.IO.FileStream.FileStream' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "Comment(java.lang.String)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.SAXParser.getXMLReader' was converted to 'SupportClass.XmlSAXDocumentManager' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Reader' and 'System.IO.StreamReader' may cause compilation errors.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Constructor 'java.io.FileReader.FileReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersParserConfigurationException"
+                            Severity = "1"
+                        >Class 'javax.xml.parsers.ParserConfigurationException' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "printTable()" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilEnumerationhasMoreElements"
+                            Severity = "2"
+                        >Method 'java.util.Enumeration.hasMoreElements' was converted to 'System.Collections.IEnumerator.MoveNext' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioPrintStreamprintln_javalangObject"
+                            Severity = "2"
+                        >Method 'java.io.PrintStream.println' was converted to 'System.Console.Out.WriteLine' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.lang.Object.toString' may return a different value.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilEnumerationnextElement"
+                            Severity = "2"
+                        >Method 'java.util.Enumeration.nextElement' was converted to 'System.Collections.IEnumerator.Current' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "Declarations" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'org.xml.sax.ContentHandler.ignorableWhitespace' was converted to 'XmlSaxContentHandler.ignorableWhitespace' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'org.xml.sax.Locator' may return a different value.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1262"
+                            Severity = "2"
+                        >The package 'java.util.regex' could not be found. If it was not included in the conversion, there may be compiler issues.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <Directory Name = "Conditions" >
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\Conditions\ESMSCondition.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\ESMSCondition.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\Conditions\ESMSInjCondition.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\ESMSInjCondition.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\Conditions\ESMSMinCondition.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\ESMSMinCondition.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\Conditions\ESMSRedCondition.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\ESMSRedCondition.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\Conditions\ESMSScoreCondition.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\ESMSScoreCondition.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\Conditions\ESMSYellowCondition.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\ESMSYellowCondition.cs"
+                />
+            </Directory>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\ESMS.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\ESMS.cs"
+            >
+                <Class Name = "ESMS.ESMS" >
+                    <Section Name = "setRandomEngine(long)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1092"
+                            Severity = "2"
+                        >The differences in the expected value  of parameters for constructor 'java.util.Random.Random'  may cause compilation errors. </Issue>
+                    </Section>
+                    <Section Name = "setRandomEngine()" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilRandomnextLong"
+                            Severity = "2"
+                        >Method 'java.util.Random.nextLong' was converted to 'SupportClass.NextLong' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1092"
+                            Severity = "2"
+                        >The differences in the expected value  of parameters for constructor 'java.util.Random.Random'  may cause compilation errors. </Issue>
+                    </Section>
+                    <Section Name = "main(java.lang.String[])" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1092"
+                            Severity = "2"
+                        >The differences in the expected value  of parameters for constructor 'java.io.BufferedReader.BufferedReader'  may cause compilation errors. </Issue>
+                        <Issue
+                            Type = "Runtime"
+                            Number = "1181"
+                            Severity = "2"
+                        >At least one expression was used more than once in the target code.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1092"
+                            Severity = "2"
+                        >The differences in the expected value  of parameters for constructor 'java.io.BufferedReader.BufferedReader'  may cause compilation errors. </Issue>
+                        <Issue
+                            Type = "Runtime"
+                            Number = "1181"
+                            Severity = "2"
+                        >At least one expression was used more than once in the target code.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaioFilecreateTempFile_javalangString_javalangString"
+                            Severity = "1"
+                        >Method 'java.io.File.createTempFile' was not converted.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaioFiledeleteOnExit"
+                            Severity = "1"
+                        >Method 'java.io.File.deleteOnExit' was not converted.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaioFilecreateTempFile_javalangString_javalangString"
+                            Severity = "1"
+                        >Method 'java.io.File.createTempFile' was not converted.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaioFiledeleteOnExit"
+                            Severity = "1"
+                        >Method 'java.io.File.deleteOnExit' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1291"
+                            Severity = "3"
+                        >The 'System.Int64' structure does not have an equivalent to NULL.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1291"
+                            Severity = "3"
+                        >The 'System.Int64' structure does not have an equivalent to NULL.</Issue>
+                    </Section>
+                    <Section Name = "play()" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.lang.Throwable.getMessage' may return a different value.</Issue>
+                    </Section>
+                    <Section Name = "writeXSLTransform(javax.xml.transform.stream.StreamSource)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioFileOutputStreamFileOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.FileOutputStream.FileOutputStream' was converted to 'System.IO.FileStream.FileStream' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "initData()" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioOutputStreamWriterOutputStreamWriter_javaioOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.OutputStreamWriter.OutputStreamWriter' was converted to 'System.IO.StreamWriter.StreamWriter' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioFileOutputStreamFileOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.FileOutputStream.FileOutputStream' was converted to 'System.IO.FileStream.FileStream' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javatextSimpleDateFormat"
+                            Severity = "1"
+                        >Constructor 'java.text.SimpleDateFormat.SimpleDateFormat' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.Calendar.getTime' may return a different value.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\ESMSPlayer.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\ESMSPlayer.cs"
+            />
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\ESMSTeam.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\ESMSTeam.cs"
+            />
+            <Directory Name = "NewCore" >
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\NewCore\DefaultEventGenerator.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\DefaultEventGenerator.cs"
+                />
+                <Directory Name = "Events" >
+                    <File
+                        OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\NewCore\Events\StartMatchEvent.java"
+                        NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\StartMatchEvent.cs"
+                    />
+                </Directory>
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\NewCore\IEvent.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\IEvent.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\NewCore\IEventGenerator.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\IEventGenerator.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\NewCore\IEventListener.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\IEventListener.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\NewCore\IGeneratorRules.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\IGeneratorRules.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\NewCore\IMatchContext.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\IMatchContext.cs"
+                >
+                    <Class Name = "ESMS.NewCore.IMatchContext" >
+                        <Section Name = "Declarations" >
+                            <Issue
+                                Type = "Compile"
+                                Number = "1156"
+                                Severity = "1"
+                            >The following fragment of code could not be parsed and was not converted.</Issue>
+                            <Issue
+                                Type = "Compile"
+                                Number = "1156"
+                                Severity = "1"
+                            >The following fragment of code could not be parsed and was not converted.</Issue>
+                            <Issue
+                                Type = "Compile"
+                                Number = "1156"
+                                Severity = "1"
+                            >The following fragment of code could not be parsed and was not converted.</Issue>
+                            <Issue
+                                Type = "Compile"
+                                Number = "1156"
+                                Severity = "1"
+                            >The following fragment of code could not be parsed and was not converted.</Issue>
+                        </Section>
+                    </Class>
+                </File>
+            </Directory>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\PenaltyPlayer.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\PenaltyPlayer.cs"
+            />
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\PenaltyShootout.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\PenaltyShootout.cs"
+            />
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\ESMS\Version.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Version.cs"
+            >
+                <Class Name = "ESMS.Version" >
+                    <Section Name = "getFullVersion()" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javatextSimpleDateFormat"
+                            Severity = "1"
+                        >Constructor 'java.text.SimpleDateFormat.SimpleDateFormat' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.Calendar.getTime' may return a different value.</Issue>
+                    </Section>
+                </Class>
+            </File>
+        </Directory>
+        <File
+            OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\fgen.java"
+            NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\fgen.cs"
+        />
+        <Directory Name = "Fixtures" >
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Fixtures\Fixtures.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Fixtures.cs"
+            >
+                <Class Name = "Fixtures.Fixtures" >
+                    <Section Name = "Fixtures(java.lang.String,java.lang.String)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.SAXParser.getXMLReader' was converted to 'SupportClass.XmlSAXDocumentManager' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Reader' and 'System.IO.StreamReader' may cause compilation errors.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Constructor 'java.io.FileReader.FileReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersParserConfigurationException"
+                            Severity = "1"
+                        >Class 'javax.xml.parsers.ParserConfigurationException' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.ArrayList.add' may return a different value.</Issue>
+                    </Section>
+                    <Section Name = "Declarations" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'org.xml.sax.ContentHandler.ignorableWhitespace' was converted to 'XmlSaxContentHandler.ignorableWhitespace' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'org.xml.sax.Locator' may return a different value.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Fixtures\IGenerator.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\IGenerator.cs"
+            />
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Fixtures\LeagueGenerator.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\LeagueGenerator.cs"
+            >
+                <Class Name = "Fixtures.LeagueGenerator" >
+                    <Section Name = "GenerateRoundTwo()" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.ArrayList.add' may return a different value.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.ArrayList.addAll' may return a different value.</Issue>
+                    </Section>
+                    <Section Name = "GenerateWeek(int,int)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.ArrayList.add' may return a different value.</Issue>
+                    </Section>
+                    <Section Name = "WriteCompetition(java.lang.String)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioOutputStreamWriterOutputStreamWriter_javaioOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.OutputStreamWriter.OutputStreamWriter' was converted to 'System.IO.StreamWriter.StreamWriter' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioFileOutputStreamFileOutputStream_javaioFile"
+                            Severity = "2"
+                        >Constructor 'java.io.FileOutputStream.FileOutputStream' was converted to 'System.IO.FileStream.FileStream' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.lang.Throwable.getMessage' may return a different value.</Issue>
+                    </Section>
+                    <Section Name = "scrambleTeams()" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilArraysasList_javalangObject[]"
+                            Severity = "2"
+                        >Method 'java.util.Arrays.asList' was converted to 'System.Collections.ArrayList' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "getMatches()" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.ArrayList.add' may return a different value.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Fixtures\PunkBuster.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\PunkBuster.cs"
+            >
+                <Class Name = "Fixtures.PunkBuster" >
+                    <Section Name = "GenerateSeeds(Fixtures.IGenerator)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilRandomnextLong"
+                            Severity = "2"
+                        >Method 'java.util.Random.nextLong' was converted to 'SupportClass.NextLong' which has a different behavior.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Fixtures\Version.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Version.cs"
+            >
+                <Class Name = "Fixtures.Version" >
+                    <Section Name = "getFullVersion()" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javatextSimpleDateFormat"
+                            Severity = "1"
+                        >Constructor 'java.text.SimpleDateFormat.SimpleDateFormat' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.Calendar.getTime' may return a different value.</Issue>
+                    </Section>
+                </Class>
+            </File>
+        </Directory>
+        <File
+            OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\JESMS.java"
+            NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\JESMS.cs"
+        />
+        <Directory Name = "Leaders" >
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Leaders\Leaders.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Leaders.cs"
+            >
+                <Class Name = "Leaders.Leaders" >
+                    <Section Name = "Leaders()" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilArraysasList_javalangObject[]"
+                            Severity = "2"
+                        >Method 'java.util.Arrays.asList' was converted to 'System.Collections.ArrayList' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "createScorers(int)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioOutputStreamWriterOutputStreamWriter_javaioOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.OutputStreamWriter.OutputStreamWriter' was converted to 'System.IO.StreamWriter.StreamWriter' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioFileOutputStreamFileOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.FileOutputStream.FileOutputStream' was converted to 'System.IO.FileStream.FileStream' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "createDps(int)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioOutputStreamWriterOutputStreamWriter_javaioOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.OutputStreamWriter.OutputStreamWriter' was converted to 'System.IO.StreamWriter.StreamWriter' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioFileOutputStreamFileOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.FileOutputStream.FileOutputStream' was converted to 'System.IO.FileStream.FileStream' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "createAssists(int)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioOutputStreamWriterOutputStreamWriter_javaioOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.OutputStreamWriter.OutputStreamWriter' was converted to 'System.IO.StreamWriter.StreamWriter' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioFileOutputStreamFileOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.FileOutputStream.FileOutputStream' was converted to 'System.IO.FileStream.FileStream' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "writeXSLTransform(java.lang.String,javax.xml.transform.stream.StreamSource)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioFileOutputStreamFileOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.FileOutputStream.FileOutputStream' was converted to 'System.IO.FileStream.FileStream' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "createPerforms(int)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioOutputStreamWriterOutputStreamWriter_javaioOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.OutputStreamWriter.OutputStreamWriter' was converted to 'System.IO.StreamWriter.StreamWriter' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioFileOutputStreamFileOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.FileOutputStream.FileOutputStream' was converted to 'System.IO.FileStream.FileStream' which has a different behavior.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Leaders\LeadersPlayer.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\LeadersPlayer.cs"
+            />
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Leaders\League.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\League.cs"
+            >
+                <Class Name = "Leaders.League" >
+                    <Section Name = "parseTableFile(java.lang.String)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.SAXParser.getXMLReader' was converted to 'SupportClass.XmlSAXDocumentManager' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Reader' and 'System.IO.StreamReader' may cause compilation errors.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Constructor 'java.io.FileReader.FileReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersParserConfigurationException"
+                            Severity = "1"
+                        >Class 'javax.xml.parsers.ParserConfigurationException' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "Declarations" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'org.xml.sax.ContentHandler.ignorableWhitespace' was converted to 'XmlSaxContentHandler.ignorableWhitespace' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'org.xml.sax.Locator' may return a different value.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Leaders\PlayerComparator.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\PlayerComparator.cs"
+            />
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Leaders\Version.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Version.cs"
+            >
+                <Class Name = "Leaders.Version" >
+                    <Section Name = "getFullVersion()" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javatextSimpleDateFormat"
+                            Severity = "1"
+                        >Constructor 'java.text.SimpleDateFormat.SimpleDateFormat' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.Calendar.getTime' may return a different value.</Issue>
+                    </Section>
+                </Class>
+            </File>
+        </Directory>
+        <File
+            OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\leaders.java"
+            NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\leaders.cs"
+        />
+        <Directory Name = "League" >
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\League\FixturesParser.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\FixturesParser.cs"
+            />
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\League\League.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\League.cs"
+            >
+                <Class Name = "League.League" >
+                    <Section Name = "League(java.lang.String,java.lang.String)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.SAXParser.getXMLReader' was converted to 'SupportClass.XmlSAXDocumentManager' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Reader' and 'System.IO.StreamReader' may cause compilation errors.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Constructor 'java.io.FileReader.FileReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilEnumerationhasMoreElements"
+                            Severity = "2"
+                        >Method 'java.util.Enumeration.hasMoreElements' was converted to 'System.Collections.IEnumerator.MoveNext' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilEnumerationnextElement"
+                            Severity = "2"
+                        >Method 'java.util.Enumeration.nextElement' was converted to 'System.Collections.IEnumerator.Current' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "League(java.lang.String)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.SAXParser.getXMLReader' was converted to 'SupportClass.XmlSAXDocumentManager' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Reader' and 'System.IO.StreamReader' may cause compilation errors.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Constructor 'java.io.FileReader.FileReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "writeXSLTransform(java.lang.String,javax.xml.transform.stream.StreamSource)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioFileOutputStreamFileOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.FileOutputStream.FileOutputStream' was converted to 'System.IO.FileStream.FileStream' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "writeXML(java.io.Writer)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilIteratorhasNext"
+                            Severity = "2"
+                        >Method 'java.util.Iterator.hasNext' was converted to 'System.Collections.IEnumerator.MoveNext' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilIteratornext"
+                            Severity = "2"
+                        >Method 'java.util.Iterator.next' was converted to 'System.Collections.IEnumerator.Current' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "main(java.lang.String[])" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1291"
+                            Severity = "3"
+                        >The 'System.Int32' structure does not have an equivalent to NULL.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioOutputStreamWriterOutputStreamWriter_javaioOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.OutputStreamWriter.OutputStreamWriter' was converted to 'System.IO.StreamWriter.StreamWriter' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioFileOutputStreamFileOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.FileOutputStream.FileOutputStream' was converted to 'System.IO.FileStream.FileStream' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.lang.Throwable.getMessage' may return a different value.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1291"
+                            Severity = "3"
+                        >The 'System.Int32' structure does not have an equivalent to NULL.</Issue>
+                    </Section>
+                    <Section Name = "Declarations" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Writer' and 'System.IO.StreamWriter' may cause compilation errors.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'org.xml.sax.ContentHandler.ignorableWhitespace' was converted to 'XmlSaxContentHandler.ignorableWhitespace' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'org.xml.sax.Locator' may return a different value.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\League\Match.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Match.cs"
+            />
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\League\MatchesParser.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\MatchesParser.cs"
+            >
+                <Class Name = "League.MatchesParser" >
+                    <Section Name = "initDate()" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javatextSimpleDateFormat"
+                            Severity = "1"
+                        >Constructor 'java.text.SimpleDateFormat.SimpleDateFormat' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.Calendar.getTime' may return a different value.</Issue>
+                    </Section>
+                    <Section Name = "MatchesParser(java.lang.String)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.SAXParser.getXMLReader' was converted to 'SupportClass.XmlSAXDocumentManager' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Reader' and 'System.IO.StreamReader' may cause compilation errors.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Constructor 'java.io.FileReader.FileReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersParserConfigurationException"
+                            Severity = "1"
+                        >Class 'javax.xml.parsers.ParserConfigurationException' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.io.File.list' may return a different value.</Issue>
+                    </Section>
+                    <Section Name = "MatchesParser()" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.SAXParser.getXMLReader' was converted to 'SupportClass.XmlSAXDocumentManager' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Reader' and 'System.IO.StreamReader' may cause compilation errors.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Constructor 'java.io.FileReader.FileReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersParserConfigurationException"
+                            Severity = "1"
+                        >Class 'javax.xml.parsers.ParserConfigurationException' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.io.File.list' may return a different value.</Issue>
+                    </Section>
+                    <Section Name = "endDocument()" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1291"
+                            Severity = "3"
+                        >The 'System.Boolean' structure does not have an equivalent to NULL.</Issue>
+                    </Section>
+                    <Section Name = "startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1291"
+                            Severity = "3"
+                        >The 'System.Boolean' structure does not have an equivalent to NULL.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1291"
+                            Severity = "3"
+                        >The 'System.Boolean' structure does not have an equivalent to NULL.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1291"
+                            Severity = "3"
+                        >The 'System.Boolean' structure does not have an equivalent to NULL.</Issue>
+                    </Section>
+                    <Section Name = "Declarations" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1291"
+                            Severity = "3"
+                        >The 'System.Boolean' structure does not have an equivalent to NULL.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'org.xml.sax.ContentHandler.ignorableWhitespace' was converted to 'XmlSaxContentHandler.ignorableWhitespace' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'org.xml.sax.Locator' may return a different value.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\League\Team.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Team.cs"
+            >
+                <Class Name = "League.Team" >
+                    <Section Name = "Declarations" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Writer' and 'System.IO.StreamWriter' may cause compilation errors.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\League\Version.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Version.cs"
+            >
+                <Class Name = "League.Version" >
+                    <Section Name = "getFullVersion()" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javatextSimpleDateFormat"
+                            Severity = "1"
+                        >Constructor 'java.text.SimpleDateFormat.SimpleDateFormat' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.Calendar.getTime' may return a different value.</Issue>
+                    </Section>
+                </Class>
+            </File>
+        </Directory>
+        <File
+            OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\lgtable.java"
+            NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\lgtable.cs"
+        />
+        <File
+            OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\rgen.java"
+            NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\rgen.cs"
+        />
+        <Directory Name = "RosterGenerator" >
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\RosterGenerator\GeneratorConfig.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\GeneratorConfig.cs"
+            >
+                <Class Name = "RosterGenerator.GeneratorConfig" >
+                    <Section Name = "GeneratorConfig(java.lang.String)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.SAXParser.getXMLReader' was converted to 'SupportClass.XmlSAXDocumentManager' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Reader' and 'System.IO.StreamReader' may cause compilation errors.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Constructor 'java.io.FileReader.FileReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersParserConfigurationException"
+                            Severity = "1"
+                        >Class 'javax.xml.parsers.ParserConfigurationException' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "Declarations" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'org.xml.sax.ContentHandler.ignorableWhitespace' was converted to 'XmlSaxContentHandler.ignorableWhitespace' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'org.xml.sax.Locator' may return a different value.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\RosterGenerator\RosterGenerator.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\RosterGenerator.cs"
+            >
+                <Class Name = "RosterGenerator.RosterGenerator" >
+                    <Section Name = "writeRoster(java.lang.String)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioOutputStreamWriterOutputStreamWriter_javaioOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.OutputStreamWriter.OutputStreamWriter' was converted to 'System.IO.StreamWriter.StreamWriter' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioFileOutputStreamFileOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.FileOutputStream.FileOutputStream' was converted to 'System.IO.FileStream.FileStream' which has a different behavior.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\RosterGenerator\TooMuchDiscardsException.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\TooMuchDiscardsException.cs"
+            />
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\RosterGenerator\Version.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Version.cs"
+            >
+                <Class Name = "RosterGenerator.Version" >
+                    <Section Name = "getFullVersion()" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javatextSimpleDateFormat"
+                            Severity = "1"
+                        >Constructor 'java.text.SimpleDateFormat.SimpleDateFormat' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.Calendar.getTime' may return a different value.</Issue>
+                    </Section>
+                </Class>
+            </File>
+        </Directory>
+        <Directory Name = "TeamSheetCreator" >
+            <Directory Name = "Comparators" >
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\TeamSheetCreator\Comparators\DefenderComparator.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\DefenderComparator.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\TeamSheetCreator\Comparators\ForwarderComparator.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\ForwarderComparator.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\TeamSheetCreator\Comparators\GoalKeeperComparator.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\GoalKeeperComparator.cs"
+                />
+                <File
+                    OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\TeamSheetCreator\Comparators\MidfielderComparator.java"
+                    NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\MidfielderComparator.cs"
+                />
+            </Directory>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\TeamSheetCreator\TeamSheetCreator.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\TeamSheetCreator.cs"
+            >
+                <Class Name = "TeamSheetCreator.TeamSheetCreator" >
+                    <Section Name = "Declarations" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1262"
+                            Severity = "2"
+                        >The package 'java.util.regex' could not be found. If it was not included in the conversion, there may be compiler issues.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\TeamSheetCreator\Version.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Version.cs"
+            >
+                <Class Name = "TeamSheetCreator.Version" >
+                    <Section Name = "getBuildDate()" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javatextSimpleDateFormat"
+                            Severity = "1"
+                        >Constructor 'java.text.SimpleDateFormat.SimpleDateFormat' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.Calendar.getTime' may return a different value.</Issue>
+                    </Section>
+                    <Section Name = "getFullVersion()" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javatextSimpleDateFormat"
+                            Severity = "1"
+                        >Constructor 'java.text.SimpleDateFormat.SimpleDateFormat' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.Calendar.getTime' may return a different value.</Issue>
+                    </Section>
+                </Class>
+            </File>
+        </Directory>
+        <File
+            OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\tsc.java"
+            NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\tsc.cs"
+        />
+        <Directory Name = "Updater" >
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Updater\FixtureParser.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\FixtureParser.cs"
+            />
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Updater\Match.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Match.cs"
+            />
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Updater\MatchesParser.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\MatchesParser.cs"
+            >
+                <Class Name = "Updater.MatchesParser" >
+                    <Section Name = "initDate()" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javatextSimpleDateFormat"
+                            Severity = "1"
+                        >Constructor 'java.text.SimpleDateFormat.SimpleDateFormat' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.Calendar.getTime' may return a different value.</Issue>
+                    </Section>
+                    <Section Name = "MatchesParser(java.lang.String[])" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.SAXParser.getXMLReader' was converted to 'SupportClass.XmlSAXDocumentManager' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Reader' and 'System.IO.StreamReader' may cause compilation errors.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Constructor 'java.io.FileReader.FileReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersParserConfigurationException"
+                            Severity = "1"
+                        >Class 'javax.xml.parsers.ParserConfigurationException' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "MatchesParser(java.lang.String)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.SAXParser.getXMLReader' was converted to 'SupportClass.XmlSAXDocumentManager' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Reader' and 'System.IO.StreamReader' may cause compilation errors.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Constructor 'java.io.FileReader.FileReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersParserConfigurationException"
+                            Severity = "1"
+                        >Class 'javax.xml.parsers.ParserConfigurationException' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.io.File.list' may return a different value.</Issue>
+                    </Section>
+                    <Section Name = "MatchesParser()" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'javax.xml.parsers.SAXParser.getXMLReader' was converted to 'SupportClass.XmlSAXDocumentManager' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Reader' and 'System.IO.StreamReader' may cause compilation errors.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Constructor 'java.io.FileReader.FileReader' was converted to 'System.IO.StreamReader' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javaxxmlparsersParserConfigurationException"
+                            Severity = "1"
+                        >Class 'javax.xml.parsers.ParserConfigurationException' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.io.File.list' may return a different value.</Issue>
+                    </Section>
+                    <Section Name = "endDocument()" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1291"
+                            Severity = "3"
+                        >The 'System.Boolean' structure does not have an equivalent to NULL.</Issue>
+                    </Section>
+                    <Section Name = "startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Class 'org.xml.sax.SAXException' was converted to 'System.Xml.XmlException' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1291"
+                            Severity = "3"
+                        >The 'System.Boolean' structure does not have an equivalent to NULL.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1291"
+                            Severity = "3"
+                        >The 'System.Boolean' structure does not have an equivalent to NULL.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1291"
+                            Severity = "3"
+                        >The 'System.Boolean' structure does not have an equivalent to NULL.</Issue>
+                    </Section>
+                    <Section Name = "Declarations" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1291"
+                            Severity = "3"
+                        >The 'System.Boolean' structure does not have an equivalent to NULL.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            Severity = "2"
+                        >Method 'org.xml.sax.ContentHandler.ignorableWhitespace' was converted to 'XmlSaxContentHandler.ignorableWhitespace' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'org.xml.sax.Locator' may return a different value.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Updater\PlayerWrapper.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\PlayerWrapper.cs"
+            />
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Updater\Updater.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Updater.cs"
+            >
+                <Class Name = "Updater.Updater" >
+                    <Section Name = "writeXSLTransform(java.lang.String[],javax.xml.transform.stream.StreamSource)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioFileOutputStreamFileOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.FileOutputStream.FileOutputStream' was converted to 'System.IO.FileStream.FileStream' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "setRandomEngine(long)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1092"
+                            Severity = "2"
+                        >The differences in the expected value  of parameters for constructor 'java.util.Random.Random'  may cause compilation errors. </Issue>
+                    </Section>
+                    <Section Name = "setRandomEngine()" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilRandomnextLong"
+                            Severity = "2"
+                        >Method 'java.util.Random.nextLong' was converted to 'SupportClass.NextLong' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1092"
+                            Severity = "2"
+                        >The differences in the expected value  of parameters for constructor 'java.util.Random.Random'  may cause compilation errors. </Issue>
+                    </Section>
+                    <Section Name = "main(java.lang.String[])" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioOutputStreamWriterOutputStreamWriter_javaioOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.OutputStreamWriter.OutputStreamWriter' was converted to 'System.IO.StreamWriter.StreamWriter' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioFileOutputStreamFileOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.FileOutputStream.FileOutputStream' was converted to 'System.IO.FileStream.FileStream' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioOutputStreamWriterOutputStreamWriter_javaioOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.OutputStreamWriter.OutputStreamWriter' was converted to 'System.IO.StreamWriter.StreamWriter' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javaioFileOutputStreamFileOutputStream_javalangString"
+                            Severity = "2"
+                        >Constructor 'java.io.FileOutputStream.FileOutputStream' was converted to 'System.IO.FileStream.FileStream' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "writeInjured(java.io.Writer,java.util.Collection)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilIteratorhasNext"
+                            Severity = "2"
+                        >Method 'java.util.Iterator.hasNext' was converted to 'System.Collections.IEnumerator.MoveNext' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilIteratornext"
+                            Severity = "2"
+                        >Method 'java.util.Iterator.next' was converted to 'System.Collections.IEnumerator.Current' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "writeSuspended(java.io.Writer,java.util.Collection)" >
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilIteratorhasNext"
+                            Severity = "2"
+                        >Method 'java.util.Iterator.hasNext' was converted to 'System.Collections.IEnumerator.MoveNext' which has a different behavior.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1073"
+                            LinkKeywordParam = "_javautilIteratornext"
+                            Severity = "2"
+                        >Method 'java.util.Iterator.next' was converted to 'System.Collections.IEnumerator.Current' which has a different behavior.</Issue>
+                    </Section>
+                    <Section Name = "Declarations" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Writer' and 'System.IO.StreamWriter' may cause compilation errors.</Issue>
+                        <Issue
+                            Type = "Compile"
+                            Number = "1186"
+                            Severity = "2"
+                        >Class hierarchy differences between 'java.io.Writer' and 'System.IO.StreamWriter' may cause compilation errors.</Issue>
+                    </Section>
+                </Class>
+            </File>
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Updater\UpdaterPlayer.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\UpdaterPlayer.cs"
+            />
+            <File
+                OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\Updater\Version.java"
+                NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\Version.cs"
+            >
+                <Class Name = "Updater.Version" >
+                    <Section Name = "getFullVersion()" >
+                        <Issue
+                            Type = "Compile"
+                            Number = "1000"
+                            LinkKeywordParam = "_javatextSimpleDateFormat"
+                            Severity = "1"
+                        >Constructor 'java.text.SimpleDateFormat.SimpleDateFormat' was not converted.</Issue>
+                        <Issue
+                            Type = "ToDo"
+                            Number = "1043"
+                            Severity = "2"
+                        >The equivalent in .NET for method 'java.util.Calendar.getTime' may return a different value.</Issue>
+                    </Section>
+                </Class>
+            </File>
+        </Directory>
+        <File
+            OldPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\src\updtr.java"
+            NewPath = "C:\Users\hernan\Desktop\JEsMS-src-1.0.9\CSEsMS\updtr.cs"
+        />
+        <Issue
+            Type = "Global Warning"
+            Number = "1274"
+            Severity = "2"
+        >Interaction between members of a class may differ because their execution sequence is different. </Issue>
+        <Issue
+            Type = "Global Warning"
+            Number = "1133"
+            Severity = "2"
+        >The equivalent of java.lang.Object.equals in Visual C# can return a different value if the two comparison methods differ.</Issue>
+        <Issue
+            Type = "Global Warning"
+            Number = "1297"
+            Severity = "2"
+        >Enumerations should be started first before accessing their data by calling their MoveNext method.</Issue>
+        <Issue
+            Type = "Global Warning"
+            Number = "1225"
+            Severity = "2"
+        >Type castings between primitive types may have different behavior.</Issue>
+    </Root>
+</ConversionLog>
+

@@ -1,0 +1,4 @@
+*.resharper.user
+*.pdb
+CSEsMS.csproj.user
+.svn

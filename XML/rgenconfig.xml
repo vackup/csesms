@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1"?> 
+<ConfigGenerator>
+   <Keeping max="50" min="25"/> 
+   <Tackling max="50" min="25"/> 
+   <Passing max="50" min="25"/> 
+   <Shooting max="50" min="25"/> 
+   <Aggression max="50" min="25"/> 
+   <Age max="17" min="23"/>
+   <TotalAllowed max="250" min="125"/> 
+</ConfigGenerator>

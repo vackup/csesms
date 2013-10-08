@@ -1,0 +1,51 @@
+﻿22/08/10:
+Para testear la logica del juego, en vez de esperar a tener la logica de acceso a datos finalizada, 
+se podrian usar las clases con los datos de los equipos hardcodeados.
+
+------
+
+09/05/10:
+Ver que entidades son las que sirven y cuales las que no. A las que sirven ponerle la logica de
+las ya existentes.
+
+Entidades definidas:
+- League
+- Team
+- Tactic (Bonus y Mult)
+- Player
+
+Tengo que ver como defino el tema del equipo titular, si a Team y sus Players le pongo una bandera que diga 
+EnPlantilla y luego Titular y Suplente o si hago otra tabla relacionada a con la formacion (TeamSheet o ESMSTeam)
+A modo de clase, podría hacer una clase que herede de Team (podria llamarse TeamSheet) y que solo ejecute un query
+que traiga los jugadores donde EnPlantilla = 1 y luego verifique Titular y Suplente
+
+-------------
+
+El Applet del juego esta en http://asiloleague.altervista.org/Applets/AL2004-05/SerieA/ManagerApplet.html
+
+Entidades a definir:
+- TeamSheet y ESMSTeam
+HZ: El ESMSTeam hereda de TeamSheet y TeamSheet es la plantilla (formacion) de jugadores que componen el equipo para el partido
+el equipo (formado por jugadores - players) que va a jugar, tanto titulares, suplentes, pateadores de penales, etc.
+Para que hereda si agrega tantas propiedades? Creo que es porque el ESMSTeam es el que juega? mmm
+- Roster --> ver en Roster.cs lo que significa y reemplazarla por su domain object 
+- Team: deberia tener una tactica asociada
+HZ (24/05): me parece que hay que unificar todas estas clases en Team (TeamSheet, ESMSTeam, Roster y Team)
+
+-- Player --> esto estan asociados a Team y Team reemplaza a Rooster ya que Rooster no agrega ningun campo nuevo. 
+
+- Tactics --> ya cree la entidad por eso saque la clase original
+  
+  Ver "ManagerGUI Applet Team Screen" para entender como funcionan los equipos
+  http://asiloleague.altervista.org/jesms/managergui/teamscreen.html
+
+
+Regenerar las entidades y ver como quedo la BD
+
+Examinar el constructor de ESMS.cs y el metodo PLAY
+
+Ver "ManagerGUI Applet" para entender un poquito como funciona el soft en general (ver la demo online)
+http://asiloleague.altervista.org/jesms/managergui/index.html
+
+
+

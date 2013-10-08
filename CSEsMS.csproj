@@ -1,0 +1,292 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <SchemaVersion>2.0</SchemaVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>CSEsMS</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CSEsMS</RootNamespace>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ProjectGuid>{99594443-9051-4042-BFA9-34B1A46CC1BB}</ProjectGuid>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>.\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>.\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentNHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8aa435e3cb308880, processorArchitecture=MSIL" />
+    <Reference Include="mscorlib">
+      <Name>mscorlib</Name>
+    </Reference>
+    <Reference Include="NHibernate, Version=2.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL" />
+    <Reference Include="NHibernate.ByteCode.Castle, Version=2.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.Xml</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Engine\Actions\Action.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Actions\ChangePosAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Actions\SubAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Actions\TacticAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Bonus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Conditional.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Conditions\Condition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Conditions\InjCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Conditions\MinCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Conditions\RedCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Conditions\ScoreCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Conditions\YellowCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Config.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\ExitCodes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Fixtures.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Match.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\MatchStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Mult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Player.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\PreferredSide.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Tactic.cs" />
+    <Compile Include="Engine\TeamSheet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\TeamStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Version.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\Week.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Engine\XmlFileMerger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ESMS\Actions\ESMSAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ESMS\Actions\ESMSChangePosAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ESMS\Actions\ESMSSubAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ESMS\Actions\ESMSTacticAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ESMS\Comment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ESMS\Conditions\ESMSCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ESMS\Conditions\ESMSInjCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ESMS\Conditions\ESMSMinCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ESMS\Conditions\ESMSRedCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ESMS\Conditions\ESMSScoreCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ESMS\Conditions\ESMSYellowCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ESMS\ESMS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ESMS\ESMSPlayer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ESMS\ESMSTeam.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ESMS\PenaltyPlayer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ESMS\PenaltyShootout.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ESMS\Version.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Principal.cs" />
+    <Compile Include="SupportClass.cs" />
+    <None Include="XML\XML File Formats used by JEsMS.pdf" />
+    <None Include="_ConversionReport.htm">
+      <SubType>Preview</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Doc\TodoList.txt" />
+    <Content Include="lib\FluentNhibernate\Antlr3.Runtime.dll" />
+    <Content Include="lib\FluentNhibernate\Castle.Core.dll" />
+    <Content Include="lib\FluentNhibernate\Castle.Core.xml" />
+    <Content Include="lib\FluentNhibernate\Castle.DynamicProxy2.dll" />
+    <Content Include="lib\FluentNhibernate\Castle.DynamicProxy2.xml" />
+    <Content Include="lib\FluentNhibernate\FluentNHibernate.dll" />
+    <Content Include="lib\FluentNhibernate\FluentNHibernate.pdb" />
+    <Content Include="lib\FluentNhibernate\FluentNHibernate.XML" />
+    <Content Include="lib\FluentNhibernate\Iesi.Collections.dll" />
+    <Content Include="lib\FluentNhibernate\Iesi.Collections.xml" />
+    <Content Include="lib\FluentNhibernate\log4net.dll" />
+    <Content Include="lib\FluentNhibernate\log4net.xml" />
+    <Content Include="lib\FluentNhibernate\NHibernate.ByteCode.Castle.dll" />
+    <Content Include="lib\FluentNhibernate\NHibernate.ByteCode.Castle.xml" />
+    <Content Include="lib\FluentNhibernate\NHibernate.dll" />
+    <Content Include="lib\FluentNhibernate\NHibernate.xml" />
+    <Content Include="XML\assisters.xml" />
+    <Content Include="XML\atm-Roster.xml" />
+    <Content Include="XML\atm.xml" />
+    <Content Include="XML\dot-TeamSheet.xml" />
+    <Content Include="XML\dps.xml" />
+    <Content Include="XML\fcs_dot.xml" />
+    <Content Include="XML\fixtures.xml" />
+    <Content Include="XML\language.xml" />
+    <Content Include="XML\league.xml" />
+    <Content Include="XML\performs.xml" />
+    <Content Include="XML\rgenconfig.xml" />
+    <Content Include="XML\scorers.xml" />
+    <Content Include="XML\table.xml" />
+    <Content Include="XML\tactics.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Domain\CSEsMS.Domain.csproj">
+      <Project>{AE7D92E5-0AE9-4CD6-843F-96EA90ED8264}</Project>
+      <Name>CSEsMS.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

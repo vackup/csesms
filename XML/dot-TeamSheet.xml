@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<TeamSheet name="dot" tactic="L">
+  <Player role="GK" name="Gianluca_Mall"/>
+  <Player role="DF" name="Vince_Sparacc"/>
+  <Player role="DF" name="Eriberto_Mogg"/>
+  <Player role="DF" name="Eraldone_Pecc"/>
+  <Player role="DF" name="Jack_Puppo"/>
+  <Player role="DF" name="Luca_Forgione"/>
+  <Player role="MF" name="Pitto_Pittalu"/>
+  <Player role="MF" name="Guido_Casina"/>
+  <Player role="FW" name="Loris_Battacc"/>
+  <Player role="FW" name="Zabio_Bellini"/>
+  <Player role="FW" name="Zandro_Bellin"/>
+  <Substitute role="GK" name="V.H._Adderly"/>
+  <Substitute role="DF" name="Serjei_Astuti"/>
+  <Substitute role="MF" name="Bjorn_Borg"/>
+  <Substitute role="MF" name="Roger_Manitto"/>
+  <Substitute role="FW" name="Pippa_Cross"/>
+  <PenaltyKicker name="Zandro_Bellin"/>
+  <Conditional>
+    <Action value="SUB">
+      <Argument value="FW"/>
+      <Argument value="16"/>
+      <Argument value="FW"/>
+    </Action>
+    <Condition type="MIN"  sign="=" value="65"/>
+    <Condition type="SCORE"  sign="&lt;=" value="0"/>
+  </Conditional>
+  <Conditional>
+    <Action value="SUB">
+      <Argument value="MF"/>
+      <Argument value="15"/>
+      <Argument value="MF"/>
+    </Action>
+    <Condition type="MIN"  sign="=" value="66"/>
+  </Conditional>
+  <Conditional>
+    <Action value="SUB">
+      <Argument value="DF"/>
+      <Argument value="13"/>
+      <Argument value="DF"/>
+    </Action>
+    <Condition type="MIN"  sign="=" value="67"/>
+  </Conditional>
+  <Conditional>
+    <Action value="SUB">
+      <Argument value="FW"/>
+      <Argument value="13"/>
+      <Argument value="DF"/>
+    </Action>
+    <Condition type="MIN"  sign="=" value="65"/>
+    <Condition type="SCORE"  sign="&gt;" value="0"/>
+  </Conditional>
+  <Conditional>
+    <Action value="TACTIC">
+      <Argument value="D"/>
+    </Action>
+    <Condition type="MIN"  sign="=" value="65"/>
+    <Condition type="SCORE"  sign="&gt;" value="0"/>
+  </Conditional>
+</TeamSheet>

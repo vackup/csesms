@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="all" name="JEsMS">
+    <property name="project.name" value="JEsMS"/>
+    <property name="project.site" value="http://asiloleague.altervista.org/JEsMS"/>
+    <property name="project.longname" value="Java Electronic Soccer Manager Simulator"/>
+    <property name="project.codename" value="Romeo"/>
+    <!--<property name="project.date" value="30 Dec 2003"/>-->
+
+    <description>
+        Project used to build JEsMS or Java ESMS from sources to the final JAR
+    </description>
+    
+    <target name="svn">
+    <description>
+    Target used to substitute in particular files informations about project revision version.
+    </description>
+    <!-- first of all i need to execute svnversion on root directory -->
+    <exec dir="." executable="svnversion" outputproperty="project.revision">
+    <arg line="."/>
+    </exec>
+    </target>
+    
+    <target name="version">
+    <description>
+    Target used to extract version informations.
+    </description>
+    <!-- first of all i need to execute svnversion on root directory -->
+    <exec dir="." executable="python" outputproperty="${currentname}.banner">
+    <arg line="../../PythonScripts/Aboutjava.py"/>
+    <arg line="${version.directory}"/>
+    </exec>    
+    
+    </target>
+
+    <!--Target generico, compila l'engine-->
+    <target name="init">
+    <description>
+    Target used to initialize properties and to create output directories needed 
+    to build or compile project files
+    </description>
+    <antcall target="version">
+        <param name="version.directory" value="./ESMS/"/>
+    </antcall>
+    <property file="propfile.txt"/> 
+    <property name="JEsMS.version" value="${JEsMS.major}.${JEsMS.minor}.${JEsMS.build}.${JEsMS.revision}"/>
+        <echo>
+        ${project.longname}.
+        ${project.site}
+        Angelo Scotto (scotto_a@hotmail.com)        
+        </echo>
+    <antcall target="version">
+        <param name="version.directory" value="./League/"/>
+    </antcall>
+    <property file="propfile.txt"/> 
+    <property name="League.version" value="${League.major}.${League.minor}.${League.build}.${League.revision}"/>
+    <antcall target="version">
+        <param name="version.directory" value="./Leaders/"/>
+    </antcall>
+    <property file="propfile.txt"/> 
+    <property name="Leaders.version" value="${Leaders.major}.${Leaders.minor}.${Leaders.build}.${Leaders.revision}"/>
+    <antcall target="version">
+        <param name="version.directory" value="./Fixtures/"/>
+    </antcall>
+    <property file="propfile.txt"/> 
+    <property name="Fixtures.version" value="${Fixtures.major}.${Fixtures.minor}.${Fixtures.build}.${Fixtures.revision}"/>
+    <antcall target="version">
+        <param name="version.directory" value="./RosterGenerator/"/>
+    </antcall>
+    <property file="propfile.txt"/> 
+    <property name="RGenerator.version" value="${RGenerator.major}.${RGenerator.minor}.${RGenerator.build}.${RGenerator.revision}"/>
+    <antcall target="version">
+        <param name="version.directory" value="./Updater/"/>
+    </antcall>
+    <property file="propfile.txt"/> 
+    <property name="Updater.version" value="${Updater.major}.${Updater.minor}.${Updater.build}.${Updater.revision}"/>
+    <antcall target="version">
+        <param name="version.directory" value="./Merger/"/>
+    </antcall>
+    <property file="propfile.txt"/> 
+    <property name="Merger.version" value="${Merger.major}.${Merger.minor}.${Merger.build}.${Merger.revision}"/>
+    <antcall target="version">
+        <param name="version.directory" value="./TeamSheetCreator/"/>
+    </antcall>
+    <property file="propfile.txt"/> 
+    <property name="TeamSheetCreator.version" value="${TeamSheetCreator.major}.${TeamSheetCreator.minor}.${TeamSheetCreator.build}.${TeamSheetCreator.revision}"/>
+    <antcall target="version">
+        <param name="version.directory" value="./Management/"/>
+    </antcall>
+    <property file="propfile.txt"/> 
+    <property name="Management.version" value="${Management.major}.${Management.minor}.${Management.build}.${Management.revision}"/>
+    <antcall target="version">
+        <param name="version.directory" value="./ManagerGUI/"/>
+    </antcall>
+    <property file="propfile.txt"/> 
+    <property name="ManagerGUI.version" value="${ManagerGUI.major}.${ManagerGUI.minor}.${ManagerGUI.build}.${ManagerGUI.revision}"/>
+    <tstamp>
+        <format pattern="dd MMM yyyy" property="project.date"/>
+    </tstamp>    
+    <property name="dest" value="release"/>
+    <property name="jar" value="jars"/>
+    <!--Se non esiste-->
+    <mkdir dir="${dest}"/>
+    <mkdir dir="${jar}"/>
+    </target>
+    <target depends="init" name="clean">
+        <echo message="Deleting output directories..."/>
+        <delete dir="${dest}"/>
+        <delete dir="${jar}"/>
+    </target>
+    <target name="cleanClasses">
+        <echo message="Deleting previously created release directory..."/>
+        <delete dir="${dest}"/>
+        <mkdir dir="${dest}"/>
+    </target>
+    <target depends="init,svn" name="compileCore">
+        <echo message="Compiling Core classes from source (V${JEsMS.version}/${DSTAMP})..."/>
+        <javac destdir="${dest}" srcdir="Engine"/>
+        <!--<antcall target="svn-restore"/>-->
+    </target>
+    
+    <target depends="init,cleanClasses,compileCore,compileRosterGenerator,compileLeague,compileLeaders,compileUpdater,compileFixture,compileTSC" name="buildTools">
+        <echo message="Building JEsMS Tools V${JEsMS.version} - ${project.codename} (${project.date})"/>
+        <echo message="Building jar file..."/>
+        <jar basedir="${dest}" jarfile="${jar}/JEsMSTools-${DSTAMP}.jar"/>
+    </target>
+    <target depends="init,cleanClasses,compileCore,svn" name="compile">
+        <echo message="Compiling ${project.name} V${JEsMS.version} - ${project.codename} (${project.date})..."/>
+        <javac destdir="${dest}" srcdir="ESMS"/>
+        <javac destdir="${dest}" includes="Principal.java" srcdir="."/>
+    </target>
+    <target depends="compile" name="build">
+        <echo message="Building ${project.name} V${JEsMS.version} - ${project.codename} (${project.date})"/>
+        <echo message="Building jar file..."/>
+        <jar basedir="${dest}" jarfile="${jar}/JEsMS-${DSTAMP}.jar"/>
+    </target>
+    <target depends="init,cleanClasses,compileCore,svn" name="compileLeague">
+        <echo message="Compiling JEsMS League Manager V${League.version} - ${project.codename} (${project.date})..."/>
+        <javac destdir="${dest}" srcdir="League"/>
+        <javac destdir="${dest}" includes="lgtable.java" srcdir="."/>
+    </target>
+    <target depends="compileLeague" name="buildLeague">
+        <echo message="Building JEsMS League Manager V${League.version} - ${project.codename} (${project.date})"/>
+        <echo message="Building jar file..."/>
+        <jar basedir="${dest}" jarfile="${jar}/League-${DSTAMP}.jar"/>
+    </target>
+    
+    <target depends="init,cleanClasses,compileCore,compileLeague,svn" name="compileFixture">
+        <echo message="Compiling JEsMS Fixture Generator program V${Fixtures.version} - ${project.codename} (${project.date})..."/>
+        <javac destdir="${dest}" srcdir="Fixtures"/>
+        <javac destdir="${dest}" includes="fgen.java" srcdir="."/>
+    </target>
+    <target depends="compileFixture" name="buildFixture">
+        <echo message="Building JEsMS Fixture Generator V${Fixtures.version} - ${project.codename} (${project.date})"/>
+        <echo message="Building jar file..."/>
+        <jar basedir="${dest}" jarfile="${jar}/FixtureGenerator-${DSTAMP}.jar"/>
+    </target>
+    
+    <target depends="init,cleanClasses,compileCore,svn" name="compileRosterGenerator">
+        <echo message="Compiling JEsMS Roster Generator V${RGenerator.version} - ${project.codename} (${project.date})..."/>
+        <javac destdir="${dest}" srcdir="RosterGenerator"/>
+        <javac destdir="${dest}" includes="rgen.java" srcdir="."/>
+    </target>
+    <target depends="compileRosterGenerator" name="buildRosterGenerator">
+        <echo message="Building JEsMS Roster Generator V${RGenerator.version} - ${project.codename} (${project.date})"/>
+        <echo message="Building jar file..."/>
+        <jar basedir="${dest}" jarfile="${jar}/RosterGenerator-${DSTAMP}.jar"/>
+    </target>
+
+    <target depends="init,cleanClasses,compileCore,svn" name="compileTSC">
+        <echo message="Compiling JEsMS Merger program V${TeamSheetCreator.version} - ${project.codename} (${project.date})..."/>
+        <javac destdir="${dest}" srcdir="TeamSheetCreator"/>
+        <javac destdir="${dest}" includes="tsc.java" srcdir="."/>
+    </target>
+    <target depends="compileTSC" name="buildTSC">
+        <echo message="Building JEsMS TeamSheet Creator V${TeamSheetCreator.version} - ${project.codename} (${project.date})"/>
+        <echo message="Building jar file..."/>
+        <jar basedir="${dest}" jarfile="${jar}/TeamSheetCreator-${DSTAMP}.jar"/>
+    </target>
+
+    <target depends="init,cleanClasses,compileCore,svn" name="compileManagementTools">
+        <echo message="Compiling JEsMS Management Tools V${Management.version} - ${project.codename} (${project.date})..."/>
+        <javac destdir="${dest}" srcdir="Management" classpath="../content/Libs/swing-layout-1.0.jar"/>
+    </target>
+    <target depends="compileManagementTools" name="buildManagementTools">
+        <echo message="Building JEsMS Management Tools V${Management.version} - ${project.codename} (${project.date})"/>
+        <echo message="Building jar file..."/>
+        <jar basedir="${dest}" jarfile="${jar}/MTools-${DSTAMP}.jar"/>
+        <jar update="true" destfile="${jar}/MTools-${DSTAMP}.jar">
+            <zipfileset src="../content/Libs/swing-layout-1.0.jar"/>
+        </jar>
+    </target>
+    <target depends="init,cleanClasses,compileCore,compileLeague,compileLeaders,compileUpdater,compileFixture,compileTSC,compileRosterGenerator,compile" name="buildAll">
+        <echo message="Building whole JEsMS package V${JEsMS.version} - ${project.codename} (${project.date})"/>
+        <echo message="Building jar file..."/>
+        <jar basedir="${dest}" jarfile="${jar}/JEsMSAll-${DSTAMP}.jar"/>
+    </target>    
+    <target depends="init,cleanClasses,compileCore,svn" name="compileLeaders">
+        <echo message="Compiling JEsMS Leaders V${Leaders.version} - ${project.codename} (${project.date})..."/>
+        <javac destdir="${dest}" srcdir="Leaders"/>
+        <javac destdir="${dest}" includes="leaders.java" srcdir="."/>
+    </target>
+    <target depends="compileLeaders" name="buildLeaders">
+        <echo message="Building JEsMS League Manager V${Leaders.version} - ${project.codename} (${project.date})"/>
+        <echo message="Building jar file..."/>
+        <jar basedir="${dest}" jarfile="${jar}/Leaders-${DSTAMP}.jar"/>
+    </target>
+    <target depends="init,cleanClasses,compileCore,svn" name="compileUpdater">
+        <echo message="Compiling JEsMS Updater V${Updater.version} - ${project.codename} (${project.date})..."/>
+        <javac destdir="${dest}" srcdir="Updater"/>
+        <javac destdir="${dest}" includes="updtr.java" srcdir="."/>
+    </target>
+    <target depends="compileUpdater" name="buildUpdater">
+        <echo message="Building JEsMS Updater V${Updater.version} - ${project.codename} (${project.date})"/>
+        <echo message="Building jar file..."/>
+        <jar basedir="${dest}" jarfile="${jar}/Updater-${DSTAMP}.jar"/>
+    </target>
+    <target depends="init,cleanClasses,compileCore,svn" name="compileApplet">
+        <echo message="Compiling JEsMS Manager Applet V${ManagerGUI.version} - ${project.codename} (${project.date})..."/>
+        <javac destdir="${dest}" srcdir="ManagerGUI"/>
+    </target>
+    <target depends="compileApplet" name="buildApplet">
+        <echo message="Building JEsMS Manager Applet V${ManagerGUI.version} - ${project.codename} (${project.date})"/>
+        <echo message="Building jar file..."/>
+        <jar basedir="${dest}" jarfile="${jar}/ManagerGUI-${DSTAMP}.jar">
+            <fileset dir="ManagerGUI">
+                <include name="META-INF/services/javax.xml.parsers.SAXParserFactory"/>
+            </fileset>
+        </jar>
+    </target>
+    <target depends="compileApplet" name="buildAppletWithImages">
+        <echo message="Building JEsMS Manager Applet V${ManagerGUI.version} - ${project.codename} (${project.date})"/>
+        <echo message="Building jar file..."/>
+        <jar basedir="${dest}" jarfile="${jar}/ManagerGUI-${DSTAMP}.jar">
+        <fileset dir="ManagerGUI">
+        <include name="Images/*.png"/>
+        </fileset>
+        <fileset dir="ManagerGUI">
+        <include name="META-INF/services/javax.xml.parsers.SAXParserFactory"/>
+        </fileset>
+        </jar>
+    </target>
+
+    </project>
